@@ -1,0 +1,77 @@
+.background {
+    height: 700px;
+    background-image: url(../images//bg-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  } 
+
+nav {
+    height: 100px;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(58,121,9,1) 37%, rgba(97,1,140,1) 100%);
+  }
+  
+link {
+    display: none;
+}
+
+.bats {
+    position: relative;
+    top: 100px;
+    left: 400px;
+    transform: rotate(-30deg);
+    width: 255px;
+    height: 255px;
+    animation: mymove2 5s infinite;
+}
+
+@keyframes mymove2 {
+    0%   {top: 0px; left: 0px;}
+    25%  {top: 0px; left: 650px;}
+    100% {top: 0px; left: 0px;}
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+
+html {
+    display: block;
+}
+  
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+div .witch {
+    position: relative;
+    top: 250px;
+    left: 360px;
+    width: 350px;
+    height: 350px;
+    animation: mymove 6s infinite;
+}
+
+@keyframes mymove {
+    0% {top: 0px;}
+    25% {top: 200px;}
+    100% {top: 0px;}
+  }
+
+div .bats2 {
+    position: absolute;
+    top: 400px;
+    left: 1150px;
+    transform: rotate(-130deg);
+    width: 255px;
+    height: 255px;
+    transition: all 4s;
+}
+
+div .bats2:hover {
+    transform: scale(1);
+}
